@@ -4,24 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Namaste react</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <div id="root"></div>
+  <body id="container">
+    <div id="root">Not rendered</div>
 
     <!-- home work -->
     <!-- what is emmet?  -->
+    <!-- What is cross origin -->
 
     <!-- <script>
       :adding heading element in div using javascript
-
     /**
      * !const heading = document.createElement("h1");
      * !heading.innerHTML = "Namaste javascript  ";
      * !const root = document.getElementById("root");
      * !oot.appendChild(heading);
      */
-
-  
   </script> -->
   </body>
 
@@ -37,18 +36,34 @@
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
   ></script>
 
-  <script>
-    const heading = React.createElement("h1", {}, "Namaste Everyone 🔥 ");
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    // passing a react element inside the root  using render method
-    root.render(heading);
-  </script>
+  <script src="App.js"></script>
 </html>
 
 <!-- 
-in line 41 createElement needs three stuff 
+in 3rd script tag createElement needs three stuff 
 {
   1 - the element or tag that we have to create 
-  2 - a empty obj  - {discussed later}
+  2 - a empty obj {}  - {discussed later}
+  {
+      what we pass here goesto the tag that is created in 1 step 
+      we can say it add attribute and in react world we say that props 
+  }
   3 - content that a tag need 
 } -->
+
+<!-- 
+   we pass inside the root.render it got injected to the root
+   and if it has any stuff insite the root it overwrite it 
+ -->
+
+<!-- timestamp - 01:40:00 -->
+<!-- now what if we have complicated str of html  
+
+  <div>
+      <h1>Heading 1</h1>
+      <h1>Heading 2</h1>
+     
+    </div>
+  how we do it using react stuff 
+  const containere = React.createElement()
+-->
