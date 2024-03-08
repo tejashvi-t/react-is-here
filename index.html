@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- home work -->
+    <!-- what is emmet?  -->
+
+    <!-- <script>
+      :adding heading element in div using javascript
+
+    /**
+     * !const heading = document.createElement("h1");
+     * !heading.innerHTML = "Namaste javascript  ";
+     * !const root = document.getElementById("root");
+     * !oot.appendChild(heading);
+     */
+
+  
+  </script> -->
+  </body>
+
+  <!-- Now doing the same thing using  { REACT } -->
+  <!-- injecting react in out html using cdn -->
+
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <script>
+    const heading = React.createElement("h1", {}, "Namaste Everyone 🔥 ");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // passing a react element inside the root  using render method
+    root.render(heading);
+  </script>
+</html>
+
+<!-- 
+in line 41 createElement needs three stuff 
+{
+  1 - the element or tag that we have to create 
+  2 - a empty obj  - {discussed later}
+  3 - content that a tag need 
+} -->
