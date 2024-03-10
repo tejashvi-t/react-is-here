@@ -6,7 +6,7 @@
     <title>Namaste react</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body id="container">
+  <body id="  ">
     <div id="root">Not rendered</div>
 
     <!-- home work -->
@@ -22,48 +22,10 @@
      * !oot.appendChild(heading);
      */
   </script> -->
+
+    <!-- Now doing the same thing using  { REACT } -->
+    <!-- injecting react in out html using cdn -->
+
+    <script type="module" src="App.js"></script>
   </body>
-
-  <!-- Now doing the same thing using  { REACT } -->
-  <!-- injecting react in out html using cdn -->
-
-  <script
-    crossorigin
-    src="https://unpkg.com/react@18/umd/react.development.js"
-  ></script>
-  <script
-    crossorigin
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script>
-
-  <script src="App.js"></script>
 </html>
-
-<!-- 
-in 3rd script tag createElement needs three stuff 
-{
-  1 - the element or tag that we have to create 
-  2 - a empty obj {}  - {discussed later}
-  {
-      what we pass here goesto the tag that is created in 1 step 
-      we can say it add attribute and in react world we say that props 
-  }
-  3 - content that a tag need 
-} -->
-
-<!-- 
-   we pass inside the root.render it got injected to the root
-   and if it has any stuff insite the root it overwrite it 
- -->
-
-<!-- timestamp - 01:40:00 -->
-<!-- now what if we have complicated str of html  
-
-  <div>
-      <h1>Heading 1</h1>
-      <h1>Heading 2</h1>
-     
-    </div>
-  how we do it using react stuff 
-  const containere = React.createElement()
--->
